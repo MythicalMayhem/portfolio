@@ -25,7 +25,7 @@ body {
     align-items: center;
     gap: 3rem;
     background: gray;
-    background: linear-gradient(0deg, #101010 0%, rgba(48,48,48,1) 11%);
+    background: linear-gradient(0deg, #101010 0%, rgba(48, 48, 48, 1) 11%);
 }
 .logo p {
     margin-left: 0.5cm;
@@ -42,7 +42,6 @@ body {
 }
 
 .bigNav {
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -56,9 +55,9 @@ body {
 
 .nav {
     box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.9) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.9) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: #161616;
     border-radius: 10px;
     padding: 10px;
@@ -144,6 +143,11 @@ fieldset {
     }
 }
 
+a {
+    color: turquoise;
+    font-weight: bolder;
+    font-size: large;
+}
 @media screen and (max-width: 860px) {
     .bigNav {
         position: relative;
