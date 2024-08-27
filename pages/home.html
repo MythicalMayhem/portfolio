@@ -8,7 +8,7 @@
   </head>
   <body>
     <main>
-      <section class="main-menu">
+      <header class="main-menu">
         <ul>
           <li>About Me</li>
           <li>Projects</li>
@@ -16,38 +16,53 @@
           <li>Skills</li>
           <li>Contact</li>
         </ul>
-      </section>
-      <section class="about-me" id="scroll">
-        <h1>About me</h1>
-        <p>
-          I began my coding journey at the age of 14 during middle school. As
-          time progresses, I continue to expand my knowledge and skills in the
-          vast and ever-evolving field of computer science. <br />
-          Additionally, I am an avid enthusiast of astronomy, astrophysics, and
-          theoretical physics.
-        </p>
-        <br />
-      </section>
-      <section class="about-me">
-        <h3>My Timeline</h3>
-        <i>2020-2021</i>
-        <p>
-          This was quite a rough introduction to professional programing, my
-          parents noticed my obsession with computer so they enrolled me in a
-          course at GoMyCode where i earned my 3 certificates of web development
-          The first encompasses front-end technologies, including HTML, CSS,
-          Bootstrap, Git, and JavaScript. The second attests to my advanced
-          proficiency in React and Redux. The third certifies my expertise in
-          back-end development, specifically with Node.js, Express.js, Mongoose,
-          and MongoDB.
-        </p>
-      </section>
-      <section class="projects"></section>
-      <section class="skills"></section>
-      <section class="contact">
-        email linkedin github twitter
-        <!-- tiktok -->
-      </section>
+      </header>
+      <div id="root">
+        <section class="about-me" id="scroll">
+          <h1>About me</h1>
+          <p>
+            I began my coding journey at the age of 14 during middle school. As
+            time progresses, I continue to expand my knowledge and skills in the
+            vast and ever-evolving field of computer science. <br />
+            Additionally, I am an avid enthusiast of astronomy, astrophysics,
+            and theoretical physics.
+          </p>
+          <br />
+        </section>
+        <section class="about-me my-timeline">
+          <h1>My Timeline</h1>
+          <i>2020-2021</i>
+
+          <p>
+            This was quite a rough introduction to professional programing, my
+            parents noticed my obsession with computer so they enrolled me in a
+            course at GoMyCode where i earned my <b>3 certificates</b> of web
+            development. <br />
+            The first encompasses front-end technologies, including
+            <em class=".html">HTML</em>, <em class=".css">CSS</em>,
+            <em class=".bootstrap">Bootstrap</em>, <em class="git">Git</em>, and
+            <em class="javascript">JavaScript</em>. The second attests to my
+            advanced proficiency in <em class="react">React</em> and
+            <em class="react">Redux</em>. The third certifies my expertise in
+            back-end development, specifically with
+            <em class="node">Node.js</em>, <em class="express">Express.js</em>,
+            <em class="mongodb">Mongoose</em>, and
+            <em class="mongodb">MongoDB</em>.
+          </p>
+          <div class="imgs"> 
+            <img src="../assets/certs/web1.png" alt="" />
+            <img src="../assets/certs/web2.png" alt="" />
+            <img src="../assets/certs/web3.png" alt="" />
+            <img src="../assets/certs/ai.png"   alt="" />
+          </div>
+        </section>
+        <section class="projects"></section>
+        <section class="skills"></section>
+        <section class="contact">
+          email linkedin github twitter
+          <!-- tiktok -->
+        </section>
+      </div>
     </main>
   </body>
 </html>

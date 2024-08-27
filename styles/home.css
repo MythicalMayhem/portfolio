@@ -13,26 +13,37 @@ body {
 body {
   background-color: purple;
 }
+#root {
+  overflow: scroll;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background: url("../assets/bgs/mainbg.webp");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
 main {
-  background: url("../assets/img/sec1bg.png");
-  background-size: 100vw 100vh ;
-  background-position: top;
+  background: url("../assets/bgs/rootbg.jpg");
+  background-size: 100vh cover;
+  background-position: top left;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
-section {
-  margin-bottom: 5rem;
-}
+
 h1 {
   text-align: center;
   font-size: 50px;
 }
+em {
+  font-weight: bolder;
+}
 .main-menu {
-  background-size: cover;
   border: 10px solid white;
   border-radius: 10px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -56,20 +67,41 @@ h1 {
     }
   }
 }
-
+#root section {
+  margin-top: 5rem;
+  padding: 1rem 2rem ;
+}
 .about-me {
   width: 90vw;
   min-width: 300px;
-  color: white;
+  color: black;
   font-weight: 450;
-  background-color: #712a95c8;
-  backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0.666);
+  backdrop-filter: blur(30px);
   align-self: center;
   padding: 1.5rem;
   border-radius: 0.4rem;
   p {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 50;
-    text-align: center;
+  }
+}
+.my-timeline {
+ 
+  p {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    img {
+      min-width: 300px;
+      width: 23%;
+    }
   }
 }
