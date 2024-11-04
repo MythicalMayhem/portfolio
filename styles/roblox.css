@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box
+}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 ::-webkit-scrollbar {
     width: 0;
@@ -88,6 +91,7 @@ fieldset {
     border: 0.3rem solid turquoise;
     max-width: 90vw;
 }
+
 .introduction {
     display: flex;
     justify-content: center;
@@ -123,22 +127,29 @@ fieldset {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
     background: transparent;
+    align-items: stretch;
     .work-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         border: 1px ridge rgba(245, 245, 245, 0.356);
         border-radius: 0.25cm;
         padding: 1rem;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 100%; 
+
         p {
             margin-bottom: 1rem;
-            font-size: x-large;
+            font-size: xx-large;
+            font-weight: bolder;
         }
         iframe {
-            height: 14rem;
-            width: 20rem;
+            height: 200px; 
+            width: 355px;
         }
     }
 }
