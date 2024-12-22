@@ -98,10 +98,12 @@ fieldset {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 50%;
     gap: 1rem;
     margin-top: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     .para {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 100%;
         max-width: 30vw;
         min-width: 250px;
         .head {
@@ -113,15 +115,15 @@ fieldset {
                 0 0 0.2em turquoise;
         }
         .desc {
-            padding: 1rem;
-            border: 2px solid white;
-            border-top: 0px;
-            border-right: 0px;
-            border-top: 0px;
-            font-size: larger;
-            border-right-style: ridge;
+
+            width: 100%;
+            padding: 1rem 0;
+        }
+        .desc ul li{
+            font-size: xx-large; 
         }
     }
+
 }
 .past-work {
     display: flex;
@@ -143,7 +145,7 @@ fieldset {
         border-radius: 0.25cm;
         padding: 1rem;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
-        max-width: 70%;
+        max-width: 50%;
         .iframe {
             aspect-ratio: 4 / 3; 
             min-height: 250px;
