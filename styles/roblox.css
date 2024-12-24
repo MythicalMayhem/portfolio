@@ -16,8 +16,13 @@ html {
     box-sizing: border-box;
 }
 
+html {
+    background-color: rgb(38, 0, 58);
+    background-image: url('../assets/bgs/robloxbg.jpg');
+    background-position: 50% 0%;
+}
 body {
-    background: #202020;
+    background: none;
     color: whitesmoke;
     font-family: "Montserrat", sans-serif;
     overflow-x: visible;
@@ -27,8 +32,9 @@ body {
     justify-content: space-around;
     align-items: center;
     gap: 3rem;
-    background: gray;
-    background: linear-gradient(0deg, #101010 0%, rgba(48, 48, 48, 1) 11%);
+    backdrop-filter: blur(50px);
+/*    background: gray;*/
+/*    background: linear-gradient(0deg, #101010 0%, rgba(48, 48, 48, 1) 11%);*/
 }
 .logo p {
     margin-left: 0.5cm;
@@ -140,12 +146,12 @@ fieldset {
         flex-grow: 1;
         align-items: stretch;
         justify-content: center;
-        flex-direction: column;
-        border: 1px ridge rgba(245, 245, 245, 0.356);
+        flex-direction: column; 
         border-radius: 0.25cm;
         padding: 1rem;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+        box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 15px;  
         max-width: 50%;
+        backdrop-filter: blur(5px);
         .iframe {
             aspect-ratio: 4 / 3; 
             min-height: 250px;
